@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #9e18c0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px; 
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background: #E6DADA; 
+    background: -webkit-linear-gradient(to right, #355057cb, #E6DADA); 
+    background: linear-gradient(to right, #bfe3ec25, #f6fd8f23), url(/HTML/Imagenes1/hotel.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color:black;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*sobre nosotros*/
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*Galeria*/
+.Instalaciones{
+    background: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*Huespedes*/
+.cartas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cartas .carta{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0  6px 0 rgba(0, 0, 0, .6);
+}
+.cartas .carta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cartas .carta >.contenido-textos-cartas{
+    width: 60%;
+    color: #fff;
+}
+.cartas .carta >.contenido-textos-cartas{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Servicios*/
+.Servicios{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicios-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 250px;
+    height: 180px;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+.cta{
+    width: 130px;
+    background: #4d0686;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+/*footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin:auto;
+    overflow:hidden;
+}
+.map-footer{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.map-cont > img{
+    width: 98%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 80px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.cont-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.cont-foo p{
+    color: #ccc;
+}
+.Titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+@media screen and (max-width: 900px) {
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-sobre-nosotros{
+        width: 90%;
+    }
+    /*Galeria*/
+    .imagen-port{
+        width: 44%;
+    }
+    /*Clientes*/
+    .cartas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cartas .carta{
+        width: 90%;
+    }
+    .cartas .carta:first-child{
+        margin-bottom: 30px;
+    }
+    .servicios-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:first-child{
+        margin-bottom: 60px;
+    }
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav > a{
+        margin-right:5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+    /*Nosotros*/
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 90%;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+    /*Portafolio*/
+    .imagen-port{
+        width: 95%;
+    }
+    /*Clientes*/
+    .cartas .carta{
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cartas .carta img{
+        width: 90px;
+        height: 90px;
+    }
+    /*footer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .cont-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .cont-foo h4{
+        border: none;
+    }
+    .cont-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .Titulo-final{
+        font-size: 20px;
+    }
+}    
+
